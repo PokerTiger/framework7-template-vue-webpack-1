@@ -31,14 +31,14 @@ module.exports = {
     hot: true,
     open: true,
     compress: true,
+    port: 8081,
     contentBase: '/www/',
     watchOptions: {
       poll: true
     }
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.js$/,
         use: 'babel-loader',
         include: [
